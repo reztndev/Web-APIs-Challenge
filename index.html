@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./assets/css/form.css" />
+    <title>Personal Blog</title>
+  </head>
+  <body>
+    <header>
+        <!-- <img src="./assets/images/photo-130-172.jpg" alt="Personal Photo" /> -->
+        <h1>Blog Central</h1>
+        <p>
+          Ponder and Express
+        </p>
+    </header>
+    <main>
+      <!-- Sidebar guiding the user to key areas in the website -->
+      <aside>  
+          <!-- <img src="./assets/images/blog-central-1.jpeg" alt="Blog Theme" /> -->
+          <h2 class="aside-label">Reflections</h2>
+          
+          <!-- <h2 class="work-label">Work</h2>
+          <h2 class="contact-label">Contact Me</h2> -->
+      </aside>
+
+      <!-- <div class="clearfix"> -->
+      <div class="form-content">
+        <div class="card">
+          <!-- <h2>Sign Up</h2> -->
+          <h2>What's on your mind?</h2>
+          <form method="POST">
+            <div class="input-group">
+              <label for="user-name">Username</label>
+              <input type="text" name="user-name" id="user-name" placeholder="John" />
+            </div>
+            <div class="input-group">
+              <label for="title">Title</label>
+              <input type="text" name="title" id="title" placeholder="My blog" />
+            </div>
+            <div class="input-group">
+              <label for="content">Content</label>
+              <input type="text" name="content" id="content" placeholder="Type the content here..." />
+            </div>
+            
+            <div id="msg"></div>
+            <button id="submit-button">Submit</button>
+          </form>
+        </div>
+      </div>
+      <script src="./assets/js/form.js"></script>
+    </main>
+  </body>
+</html>

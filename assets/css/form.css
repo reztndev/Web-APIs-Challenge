@@ -1,0 +1,133 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  background-color: #eff5f8;
+}
+
+header {
+  padding: 10px;    /* original padding from portfolio 50px */
+  text-align: left;       
+  background: #13293d;
+  color: #fff;
+}
+
+/* ----------- block added ----------------- */
+/* main spec below makes the aside vertical /*
+/*main {
+  display: flex;    
+}*/
+
+.aside-label {
+  flex: 0 0 50px;   /* original from portfolio: 150px */
+  color: white;
+}
+
+/* -------------- block end --------------------- */
+
+h2 {
+  font-size: 3em;
+  margin: 0px;
+  margin-top: 0.45em;
+  margin-bottom: 0.45em;
+}
+
+button {
+  background-color: #001b44;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2em;
+  letter-spacing: 0.21px;
+  line-height: 16px;
+  max-width: 255px;
+  padding: 20px 52px;
+  text-align: center;
+  transition-duration: 0.15s;
+  transition-property: background-color;
+  transition-timing-function: linear;
+  margin-top: 0.6em;
+  float: right;
+}
+
+/* change to form-inputs */
+.input-group {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+label {
+  color: #212121;
+}
+
+input {
+  background-color: whitesmoke;
+  border-radius: 3px;
+  border-width: 1px;
+  color: #5f6368;
+  font-size: 1.1em;
+  height: 45px;
+  line-height: 20px;
+  margin: 0;
+  margin-top: 10px;
+  max-width: 100%;
+  padding: 8px 8px 8px 8px;
+  transition-delay: 0s, 0s;
+  transition-duration: 0.2s, 0.2s;
+  transition-property: background-color, color;
+  transition-timing-function: ease, ease;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.card {
+  display: block;
+  background-color:#FFFFE0;;
+  border: 1px solid #eceff1;
+  border-radius: 8px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,
+    rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+  margin: 40px auto;
+  padding: 20px;
+  width: 60vw;
+}
+
+.card::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* .clearfix::after { */
+.form-content {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+/* Style the guiding aside on the left of screen */
+aside {
+  flex: 1 1 200px;
+  display: flex;                    
+  flex-direction: column;           
+  justify-content: space-between;    
+  text-align: right;
+  font-size: small;    /* original was large */
+  Padding: 0 10px 0 100px;
+  border-right: 2px solid #13293d;  
+  /*background-color: #b9c6ae;*/
+  background-image: url('../images/blog-central-1.jpeg');
+}
+
+/* Stack the main body and navbar vertically */
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+}
