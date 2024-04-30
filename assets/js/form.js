@@ -7,6 +7,7 @@ const submitButton = document.querySelector('#submit-button');
 submitButton.addEventListener('click', function (event) {
   event.preventDefault();
   const blogArray = JSON.parse(localStorage.getItem("userBlog")) || [];
+
   // create user blog object from submission
   const userBlog = {
     storedUserName: userNameInput.value.trim(),
@@ -15,6 +16,7 @@ submitButton.addEventListener('click', function (event) {
   };
 
   blogArray.push(userBlog);
+  
   // Commit the new submission to local storage
   localStorage.setItem('userBlog', JSON.stringify(blogArray));
 

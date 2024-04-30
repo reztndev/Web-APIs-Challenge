@@ -12,24 +12,16 @@ body {
 }
 
 header {
-  padding: 10px;    /* original padding from portfolio 50px */
+  padding: 10px;    
   text-align: left;       
   background: #13293d;
   color: #fff;
 }
 
-/* ----------- block added ----------------- */
-/* main spec below makes the aside vertical /*
-/*main {
-  display: flex;    
-}*/
-
 .aside-label {
-  flex: 0 0 50px;   /* original from portfolio: 150px */
+  flex: 0 0 50px;   
   color: white;
 }
-
-/* -------------- block end --------------------- */
 
 h2 {
   font-size: 3em;
@@ -56,7 +48,6 @@ button {
   float: right;
 }
 
-/* change to form-inputs */
 .input-group {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -104,21 +95,19 @@ input {
   clear: both;
 }
 
-/* .clearfix::after { */
 .form-content {
   content: " ";
   display: block;
   clear: both;
 }
 
-/* Style the guiding aside on the left of screen */
 aside {
   flex: 1 1 200px;
   display: flex;                    
   flex-direction: column;           
   justify-content: space-between;    
   text-align: right;
-  font-size: small;    /* original was large */
+  font-size: small;    /* originally was large */
   Padding: 0 10px 0 100px;
   border-right: 2px solid #13293d;  
   /*background-color: #b9c6ae;*/
