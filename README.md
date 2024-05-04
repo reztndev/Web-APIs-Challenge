@@ -53,3 +53,4 @@ my-blog
 ├── blog.html
 └── README.md
 ```
+[Screenshot of the completed website:](./assets/images/app-screenshot.png)
