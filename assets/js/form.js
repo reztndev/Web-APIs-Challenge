@@ -15,6 +15,13 @@ submitButton.addEventListener('click', function (event) {
     storedContent: contentInput.value.trim(),
   };
 
+  // If any of the user bolog inputs are null, display alert and abort
+  if( !userBlog.storedUserName || !userBlog.storedTitle || !userBlog.storedContent ) {
+    alert("All input fields must be filled in before submission.  Try again.");
+
+    return;
+  }
+
   blogArray.push(userBlog);
   
   // Commit the new submission to local storage

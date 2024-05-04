@@ -1,0 +1,38 @@
+
+/* 
+ * Styling the elements that are incluenced and controlled
+ * when the theme button is presssed 
+*/
+.theme-button {
+    header {                      
+      padding: 10px;
+      text-align: left;       
+      background-color:lightyellow;
+      color: black;
+  
+      background: #13293d;
+      color: #fff;
+      
+      display: flex;                 
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    aside {
+      background-image: url('../images/clouds.jpeg');
+    }
+    
+    .submitted-blog-class {
+      display: block; 
+      border: 3px solid #13293d; 
+      padding: 10px; 
+      clear: both; 
+      
+      background-color:lightgray;
+      background-color:lightslategray;
+    }
+  
+    footer {
+      background-color: #13293d;
+    }
+}

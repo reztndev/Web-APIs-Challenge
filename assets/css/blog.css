@@ -11,25 +11,18 @@ body {
   background-color: #eff5f8;
 }
 
-.dark-button {
-  background-color: black;
-  color: white;
-}
-
 header {
+  border: 3px solid #001b44;
   padding: 10px;
-  text-align: left;       
+  text-align: left;   
   background: #13293d;
   color: #fff;
+  background-color:lightblue;
+  color:navy;
   /* added the following three lines to fix the alignment of the buttons */
   display: flex;                 
   justify-content: space-between;
   align-items: center;
-}
-
-.aside-label {
-  flex: 0 0 70px;  
-  color: white;
 }
 
 h2 {
@@ -37,6 +30,16 @@ h2 {
   margin: 0px;
   margin-top: 0.45em;
   margin-bottom: 0.45em;
+}
+
+/* Default styling for the submitted blog */
+.submitted-blog-class {
+  display: block; 
+  border: 3px solid #001b44; 
+  padding: 10px; 
+  clear: both; 
+  background-color:paleturquoise;
+  color: black;
 }
 
 button {
@@ -47,104 +50,14 @@ button {
   font-size: 1.2em;
   letter-spacing: 0.21px;
   line-height: 16px;
-  max-width: 255px;
-  padding: 10px 22px 10px 22px;       /* original top:20px right:52px */
+  max-width: 150px;                   /* original: 255px */
+  padding: 10px 22px 10px 22px;       /* original: top:20px right:52px */
   text-align: center;
   transition-duration: 0.15s;
   transition-property: background-color;
   transition-timing-function: linear;
   margin-top: 0.6em;
   float: right;
-}
-
-.input-group {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-label {
-  color: #212121;
-}
-
-input {
-  background-color: whitesmoke;
-  border-radius: 3px;
-  border-width: 1px;
-  color: #5f6368;
-  font-size: 1.1em;
-  height: 45px;
-  line-height: 20px;
-  margin: 0;
-  margin-top: 10px;
-  max-width: 100%;
-  padding: 8px 8px 8px 8px;
-  transition-delay: 0s, 0s;
-  transition-duration: 0.2s, 0.2s;
-  transition-property: background-color, color;
-  transition-timing-function: ease, ease;
-  vertical-align: middle;
-  width: 100%;
-}
-
-.card {
-  display: block;
-  /* background-color:#FFFFE0;; */
-  background-color: lightblue;
-  border: 1px solid #eceff1;
-  border-radius: 8px;
-  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,
-    rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
-  margin: 40px auto;
-  padding: 20px;
-  width: 60vw;
-}
-
-.card::after {
-  content: " ";
-  display: block;
-  clear: both;
-}
-
-.blog-entry {
-  content: " ";
-  display: block;
-  clear: both;
-}
-
-/* test-entry class added to experiment populating blog without Card */
-.submitted-blog-enteries
-{
-  content: " ";
-  display: block;
-  border: 3px solid #13293d;
-  clear: both;
-  background-color:cornsilk;
-
-  #submitted-title {
-    display: block;
-    /*border-style: double;*/
-    border-bottom: 1px solid #13293d; 
-    /*background-color:lightblue ;*/
-  }
-  #submitted-content {
-    display: block;
-    /*background-color: aliceblue;*/
-    /*border-bottom: 1px solid #13293d;*/
-  }
-  #by-user {
-    display: inline-block;
-    font-style: italic;
-  } 
-  #submitted-user {
-    display: inline-block;
-    font-style: italic;
-    /*border: 1px solid #13293d;*/
-  }
-
- /* #get-user {
-    display: block;
-    border: 1px solid #13293d;
-  }*/
 }
 
 .nav-button {
@@ -158,19 +71,27 @@ aside {
   flex-direction: column;           
   justify-content: space-between;    
   text-align: right;
-  font-size: small;    /* original was large */
+  font-size: small;                 /* original: large */
   Padding: 0 10px 0 100px;
   border-right: 2px solid #13293d;  
-  /*background-color: #b9c6ae;*/
   background-image: url('../images/blog-central-1.jpeg');
+  border: 3px solid #001b44;
+}
+
+.aside-label {
+  flex: 0 0 70px;  
+  color: white;
 }
 
 footer {
   display:flex;
+  border: 3px solid #001b44;
+  border-top: 0px;
   padding: 2px;
   text-align: right;
   width: 100%;                      
-  background: #13293d;
+  background-color:darkcyan;
+
   color: #fff;
   ul {
     display: flex;

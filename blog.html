@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./assets/css/blog.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
     <title>Personal Blog</title>
   </head>
 
@@ -18,7 +19,7 @@
         </p>
       </div>
       <div>
-        <button class="nav-button" id="dark-button">Mood</button>
+        <button class="nav-button" id="theme-button">Theme</button>
         <button class="nav-button" id="back-button">Back</button>
         <button class="nav-button" id="clear-button">Clear</button>
       </div>
@@ -29,8 +30,8 @@
         <h2 class="aside-label">Compilation of your reflections</h2>
       </aside>
       
-      <!-- Defining an anchor div on to which the dynamic content of user blog enteries will be generated -->
-      <div id="posts"></div>
+      <!-- Empty anchor div on to which the dynamic content of user blog enteries will be generated -->
+      <div class="posts" id="posts"></div>
     </main>
 
     <script src="./assets/js/blog.js"></script>
